@@ -1,0 +1,86 @@
+body {
+  font-size: 20px;
+  background: rgb(150, 144, 255);
+  background: linear-gradient(
+    90deg,
+    rgb(229, 227, 255) 0%,
+    rgb(214, 255, 226) 100%
+  );
+}
+
+nav {
+  background-color: rgb(191, 255, 234);
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+ul {
+  text-align: end;
+}
+li {
+  display: inline;
+  padding: 10px 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-size: 1.5rem;
+  color: blueviolet;
+}
+p {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 425px) {
+  nav {
+    font-size: 15px;
+    position: fixed;
+  }
+  ul {
+    text-align: center;
+  }
+  li {
+    padding: 10px;
+  }
+  P {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.container {
+  margin: 100px auto;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px auto;
+}
+
+section img {
+  width: 30%;
+  padding: 20px 5px;
+}
+
+@media only screen and (max-width: 1048px) {
+  section img {
+    width: 100%;
+    padding: 5px 0px;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 3rem 1rem;
+}
+footer img {
+  width: 60px;
+  margin: 10px 20px;
+  border: transparent 1px solid;
+  border-radius: 50%;
+}
+footer img:hover {
+  box-shadow: 10px 10px rgb(150, 144, 255);
+  cursor: pointer;
+}
